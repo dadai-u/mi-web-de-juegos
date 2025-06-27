@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake</title>
+  <link rel="stylesheet" href="snake.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>🎮 ¡Snake! 🐍</h1>
+  <p>Usa las flechas para moverte.</p>
+
+  <div id="scoreBoard">
+    <span id="score">Puntaje: 0</span> |
+    <span id="highScore">Récord: 0</span>
+  </div>
+
+  <canvas id="gameCanvas" width="300" height="300"></canvas>
+
+  <button id="restartBtn">🔁 Reiniciar</button>
+  <button id="backBtn">🏠 Volver al Inicio</button>
+
+  <div id="gameOverMsg" class="hidden">
+  <p>💀 ¡Perdiste! Tocá la pantalla o presioná ESPACIO para reiniciar.</p>
+  </div>
+
+  <script src="snake.js"></script>
+</body>
+</html>

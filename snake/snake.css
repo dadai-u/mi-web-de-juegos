@@ -1,0 +1,79 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(135deg, #ff00cc, #3333ff);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-shadow: 2px 2px #000;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+#scoreBoard {
+  font-size: 0.9rem;
+  margin: 10px 0;
+  background-color: rgba(0,0,0,0.4);
+  padding: 8px;
+  border: 2px dashed #fff;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+canvas {
+  background-color: #000;
+  border: 4px solid #fff;
+  box-shadow: 0 0 15px #00ffff;
+  margin-top: 20px;
+}
+
+button {
+  margin: 10px 5px;
+  padding: 10px 15px;
+  background: #ffcc00;
+  color: #000;
+  border: 2px solid #fff;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
+
+button:hover {
+  background: #ffff66;
+  color: #000;
+  transform: scale(1.1);
+}
+#gameOverMsg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border: 2px dashed #fff;
+  color: #ffcc00;
+  font-size: 0.8rem;
+  z-index: 10;
+  border-radius: 8px;
+  text-shadow: 1px 1px #000;
+}
+
+.hidden {
+  display: none;
+}
